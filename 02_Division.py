@@ -1,13 +1,10 @@
-Eingabe = int(input("Bitte eine Zahl A eingeben:"))
+Eingabe1 = int(input("Bitte eine Zahl A eingeben"))
+Eingabe2 = int(input("Bitte eine Zah B eingeben"))
 
-ZahlA = int(Eingabe)
-while(ZahlA == 0)
+ZahlA = int(Eingabe1)
+ZahlB =int(Eingabe2)
+while(ZahlB == "0")
 print ("Bitte eine Zahl ungleich Null eingeben")
 
-ZahlB = int(input("Bitte eine Zahl B angeben:"))
-while(ZahlB == 0)
-print("Bitte eine Zahl ungleich Null eingeben")
-
-
-print("Das Ergebnis ist", ZahlA + ZahlB) 
-
+result = ZahlA/ZahlB
+print("Das Ergebnis der Division ist :", result)

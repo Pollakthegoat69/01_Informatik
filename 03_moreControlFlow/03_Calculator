@@ -1,0 +1,44 @@
+Operation=int("Welche Rechenoperation soll ausgeführt werden?": "Add" für Addition, "Sub" für Subtraktion, "Mul"für Multiplikation, "Div" für Division): ")
+    
+match Operation:
+
+    case "Add":
+        print("Gib eine Zahl1 ein")
+        Zahl1 = int(input)
+        print("Gib eine Zahl2 ein")
+        Zahl2 = int(input)
+        Ergebnis = (Zahl1) + (Zahl2)
+        print("Das Ergebnis der Addition ist: ", Ergebnis)
+
+    case "Sub":
+        print("Gib eine Zahl1 ein")
+        Zahl1 = int(input)
+        print("Gib eine Zahl2 ein")
+        Zahl2 = int(input)
+        Ergebnis = (Zahl1) - (Zahl2) 
+        print("Das Ergebnis der Subtraktion ist: ", Ergebnis)
+
+    case "Mul":
+        print("Gib eine Zahl1 ein")
+        Zahl1 = int(input)
+        print("Gib eine Zahl2 ein")
+        Zahl2 = int(input)
+        Ergebnis = (Zahl1) * (Zahl2)    
+        print("Das Ergebnis der Multiplikation ist: ", Ergebnis)   
+        
+    case "Div":
+        print("Gib eine Zahl1 ein")
+        Zahl1 = int(input)
+        print("Gib eine Zahl2 ein")
+        Zahl2 = int(input)
+        while Zahl2 == 0:
+            print("Division durch 0 ist nicht möglich, bitte eine neue Zahl eingeben")
+            Zahl2 = int(input())
+        Ergebnis = (Zahl1) / (Zahl2)
+        print("Das Ergebnis der Division ist: ", Ergebnis)
+
+
+
+Beenden=input("Zum Beenden Enter drücken")
+
+print(Beenden)
